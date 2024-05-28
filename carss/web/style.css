@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+}
+
+
+
+html::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: #fe5b3d;
+    border-radius: 5rem;
+}
+
+section {
+    padding: 50px 100px;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #eeeff1;
+    padding: 15px 100px;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+
+.logo img {
+    width: 40px;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar li {
+    position: relative;
+}
+
+.navbar a {
+    font-size: 1rem;
+    padding: 10px 20px;
+    color: #444;
+    font-weight: 500;
+}
+
+.navbar a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: linear-gradient(#fe5b3d,#ffac38);
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    transition: 0.5s;
+}
+
+.navbar a:hover::after {
+    width: 100%;
+}
+
+.header-icon a {
+    padding: 10px 20px;
+    font-size: 22px;
+}
+
+.header-icon .bx {
+    color: #444;
+}
+
+.header-icon .bx:hover {
+    color: #ffac38;
+}
+
+.home {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    background: #eeeff1;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.home img {
+    width: 650px;
+    height: 100%;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.text h1 {
+    font-size: 4rem;
+    letter-spacing: 2px;
+}
+
+.text span {
+    color: #fe5b3d;
+}
+
+.text p {
+    margin: 00.5rem 0 1rem;
+}
+
+.heading {
+    text-align: center;
+}
+
+.heading span {
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.heading h1 {
+    font-size: 2rem;
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,auto));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.services-container .box {
+    padding: 10px;
+    border-radius: 1rem;
+    box-shadow: 1px 4px 41px rgba(0, 0, 0, 0.1);
+}
+
+.services-container .box .box-img {
+    width: 100%;
+    height: 200px;
+}
+
+.services-container .box .box-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    object-fit: cover;
+    object-position: center;
+}
+
+.services-container .box p {
+    padding: 0 10px;
+    border: 1px solid #444;
+    width: 58px;
+    border-radius: 0.5rem;
+    margin: 1rem 0 1rem;
+}
+
+.services-container .box h3 {
+    font-weight: 500;
+}
+
+.services-container .box h2 {
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0.2rem 0 0.5rem;
+}
+
+.services-container .box h2 span {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #444;
+}
+
+.services-container .box .btn {
+    display: flex;
+    justify-content: center;
+    background: #474fa0;
+    color: #fff;
+    padding: 10px;
+    border-radius: 0.5rem;
+}
+
+.services-container .box .btn:hover {
+    background:  #fe5b3d;
+}
+
+/* .about-container {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax (250px,auto));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.about-container .box {
+    text-align: center;
+    padding: 20px;
+} */
+
+.about-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, auto));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.about-container .box {
+    padding: 20px;
+    box-shadow: 2px 2px 10px 4px rgb(14 55 54 / 15%);
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+.about-container .box p {
+    font-size: 0.938rem;
+}
+
+.about-container .box h2 {
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin: 1.4rem 0 0.5rem;
+}
+
+.about-container .box:hover {
+    background: #edeae3;
+    transition: 0.2s all linear;
+}/*
+ 
+ 
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 12, 2023, 7:11:09 PM
+    Author     : Danish
+*/
+

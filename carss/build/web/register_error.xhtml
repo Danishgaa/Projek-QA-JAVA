@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://xmlns.jcp.org/jsf/passthrough">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="" />
+     <link rel="stylesheet" href="login.css" />
+    <title>Register form</title>
+</head>
+<body>
+    <div class="login">
+        <h:form>
+            <h1 class="login__title">Sign Up</h1>
+            <div class="login__inputs">
+                <div class="login__box">
+                    <h:inputText id="name" value="#{employee.name}" p:placeholder="Input your name" required="true" styleClass="login__input" />
+                </div>
+                <div class="login__box">
+                    <h:inputText id="email" value="#{employee.email}" p:placeholder="Input your email" required="true" styleClass="login__input" />
+                  
+                </div>
+                <div class="login__box">
+                    <h:inputSecret id="password" value="#{employee.password}" p:placeholder="Input your password" required="true" styleClass="login__input" />
+                    <i class="ri-lock-2-fill"></i>
+                </div>
+            </div>
+            
+            <h:commandButton type="submit" value="Register" action="#{employee.save_user()}" styleClass="login__button" />
+            <div class="login__register">
+                Already a member? <h:outputLink value="login.xhtml">Login here</h:outputLink>
+            </div>
+        </h:form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://xmlns.jcp.org/jsf/passthrough">
+<h:head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="" />
+    <link rel="stylesheet" href="login.css" />
+    <title>Login form</title>
+</h:head>
+<h:body>
+    <div class="login">
+        <h:form>
+            <h1 class="login__title">Login</h1>
+            <div class="login__inputs"> 
+                <div class="login__box">
+                    <h:inputText id="email" value="#{employee.email}"  p:placeholder="Input your email" required="true" class="login__input"  />
+                </div>
+
+                <div class="login__box">
+                    <h:inputSecret id="password" value="#{employee.password}"   p:placeholder="Input your password" required="true" class="login__input" />
+                    <i class="ri-lock-2-fill"></i>
+                </div>
+            </div>
+            <h:commandButton type="submit" value="Login" action="#{employee.login_user()}" class="login__button" />
+
+            <div class="login__register">
+                Don't have an account? <h:outputLink value="register.xhtml">Register</h:outputLink>
+            </div>
+        </h:form>
+    </div>
+</h:body>
+</html>
